@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <img src="profile.jpg" alt="My Photo" class="profile-pic">
+    <h2>Hello, I'm <span>Your Name</span></h2>
+    <p>I am <span class="typing"></span></p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate web developer with a love for creating clean, modern, and user-friendly websites. 
+      I enjoy learning new technologies and building projects that make an impact.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-container">
+      <div class="skill">💻 HTML</div>
+      <div class="skill">🎨 CSS</div>
+      <div class="skill">⚡ JavaScript</div>
+      <div class="skill">📱 Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>A simple and modern landing page design using HTML & CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio showcasing my skills and work.</p>
+      </div>
+      <div class="project-card">
+        <h3>Mini JavaScript Apps</h3>
+        <p>Fun little projects like calculators and to-do lists.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <textarea id="message" placeholder="Enter your message" rows="4" required></textarea>
+      <button type="submit" class="btn-gradient">Send Message</button>
+    </form>
+    <p id="form-message" class="form-message"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
